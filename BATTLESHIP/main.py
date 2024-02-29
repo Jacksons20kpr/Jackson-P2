@@ -15,12 +15,13 @@ def print_board(squares):
        for i in range(0, len(squares), 5):
            print(" | ".join(squares[i:i+5]))    
           
-          
+
 
 spot = input("Pick a collumn and row")
+
 if spot in hits:
-       print("Hit!!!")  
-       squares[squares.index(spot)] = "☑" 
+               print("Hit!!!")  
+squares[squares.index(spot)] = "☑" 
 #def print_board():       
         #print(f"{squares[0]} |  {squares[1]} | {squares[2]} | {squares[3]} | {squares[4]}")
         #print(f"{squares[5]} |  {squares[6]} | {squares[7]} | {squares[8]} | {squares[9]}")
@@ -30,13 +31,16 @@ if spot in hits:
       
 print_board(squares)
 if spot == hits or squares:
-     print_board()
+           print_board()
 
 
        
 else:
         print("Miss!!!")
-print_board(squares)
+        print_board(squares)
+        
+       
+         
 #if spot == "3c" or "3d" or "5a" or "5b" or "5c" or "1a" or "2a":
         #run=True
 #else:
