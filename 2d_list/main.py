@@ -6,6 +6,8 @@ grades= [["Ethan", 80,77,88,99],
          ["Dylan", 75,21],
          ["Thomas", 95,99],
          ["Jerald", 85,88]]
+#new_student = input("Please add a new student: ")
+#grades.append(new_student)
 def class_average(course):
     total=0
     for student in grades:
