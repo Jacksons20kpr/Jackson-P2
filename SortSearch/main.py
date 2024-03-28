@@ -7,17 +7,8 @@ print(x)
 
 
 
-def search(names):
- 
-    for i in range(len(names)):
- 
-        if input[i] == names:
-            return i
- 
-    return -1  
+f = input("Which name do you want to find?: ")
 
-print("Which name do you want to find? ")
-f = input()
 if input == names:
     print(len)
 else: 
