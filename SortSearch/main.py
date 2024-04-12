@@ -5,11 +5,9 @@ names =  ["Jackson","Anton","Cameron","Shane","Ethan","Mary","Nate","Reagan","Do
 x = sorted(names)
 print(x)
 
-
-
 f = input("Which name do you want to find?: ")
 
-if input == names:
-    print(len)
+if f in names: 
+    print(names.index(f))
 else: 
     print("Name not found")    

@@ -1,6 +1,10 @@
 #Name: Jackson
 #Date: 01/03/24
 #Purpose: 2D List
+list= self.get_from_db()
+
+new_list = [list(ele) for ele in list]
+
 grades= [["Ethan", 80,77,88,99],
          ["John", 60,88,95,70],
          ["Dylan", 75,59,65,79],
