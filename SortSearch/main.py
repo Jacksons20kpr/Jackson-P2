@@ -60,4 +60,17 @@ search = input("Which Name Would You Like to See Counted?:")
 
 if input == names:
     binary_search(names) 
-    print(names)  
+    print(names)
+          
+result = binary_search(names, 0, len(names)-1, search)
+print(result)
+
+options =["ext"]
+
+menus = dict({"ext":exit})
+while True:
+ 
+    if input in options:
+        menus[input]()
+    else:
+        print("bad input")
