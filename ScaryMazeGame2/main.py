@@ -2,8 +2,9 @@
 #Date:
 #Basic PyGame Setup Code
 import pygame,sys
-import Objects.moving
-import Objects.image
+import interface.game
+import interface.intro
+import interface.outro
 pygame.init()
 
 # Game Setup
@@ -14,3 +15,6 @@ WINDOW_HEIGHT = 1000
 
 #Setup of Starting objects
 window = pygame.display.set_mode((WINDOW_WIDTH,WINDOW_HEIGHT), pygame.HWSURFACE)
+interface.intro.output(WINDOW_WIDTH,WINDOW_HEIGHT,fpsClock,fps,window)
+interface.game.output(WINDOW_WIDTH,WINDOW_HEIGHT,fpsClock,fps,window)
+interface.outro.output(WINDOW_WIDTH,WINDOW_HEIGHT,fpsClock,fps,window)
